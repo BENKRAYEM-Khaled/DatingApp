@@ -9,7 +9,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DatingApp.API.Controllers
 {
-    // http://localhost:5000/api/values
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]
@@ -19,8 +18,8 @@ namespace DatingApp.API.Controllers
         public ValuesController(DataContext context)
         {
             _context = context;
-
         }
+
         // GET api/values
         [AllowAnonymous]
         [HttpGet]
